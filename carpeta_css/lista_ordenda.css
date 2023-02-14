@@ -1,0 +1,16 @@
+ol {
+  list-style: none;
+  counter-reset: contador;
+}
+ol li{
+    counter-increment: contador;
+}
+
+/*modificacion de enumeracion  antes*/
+ol li::before {
+  content: "Curso." counter(contador) '  ';
+  color: blue;
+}
+ol li::after {
+  content: ".depues";
+}

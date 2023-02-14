@@ -1,0 +1,88 @@
+h1 {
+  color: blue;
+  background-color: blueviolet;
+}
+p {
+  color: white;
+  background-color: crimson;
+  padding: 15px;
+  border: 10px solid powderblue;
+  /*margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    */
+  margin: 40px 10px 20px 10px;
+  text-align: center;
+}
+a:link,
+a:visited {
+  color: white;
+  background-color: #b5179e;
+  /*para quitar el subrrayado del link*/
+  text-decoration: none;
+  padding: 15px 25px;
+  text-align: none;
+  /*elementtos que no se encimen*/ 
+  display: inline-block;
+}
+/*cuando se halla dado clic al link
+a:visited {
+  color: blueviolet;
+}*/
+/*cuando se pone encima del link*/
+a:hover {
+  background-color: #f72585;
+  text-decoration: underline;
+}
+/*cuando sele da y está activo click*/
+a:active {
+    background-color: #f72585;
+}
+
+body {
+  background-color: white;
+}
+/*estilos para tablas*/
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table{
+  /*anncho de la pantalla*/
+  width: 100%;
+}
+td{
+  text-align: center;
+}
+th{
+  text-align: left;
+  color:#f1faee;
+  background-color:#1d3557 ;
+}
+caption{
+  color: crimson;
+  font-family:serif;
+  font-size: 45px;
+  line-height:70px ;
+}
+/*filas pares (even)*/
+tr:nth-child(even){
+  background-color:#f1faee ;
+}
+
+/*estilos de listas para menu navegaion*/
+ul{
+  list-style-type: none;
+  background-color: #1d3557;
+  overflow: hidden;
+}
+li{
+  float: left;
+}
+/* li a (la combinacion siginica que solo a las listas con links )*/
+li a{
+  display: block;
+  text-align: center;
+}

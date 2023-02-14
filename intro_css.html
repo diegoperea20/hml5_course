@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intrducion a css3</title>
+    <!--modifica con etiqueta style modifica la etiqueta a seleccionar-->
+    <!--LO IDEAL ES HACER TODOS LOS ESILOS EN UNA CARPETA CSS-->
+    <!--
+    <style>
+        h1{
+            color: blue;
+        }
+        p{
+            color: white;
+            background-color: crimson;
+        }
+    </style>
+    -->
+    <!--PARA QUE SE ACTIVE LOS ESTILOS EXTERNOS SE HACE CON ETIQUTA LINK REL-->
+    <link rel="stylesheet" href="carpeta_css/estilos.css" />
+  </head>
+  <body>
+    <h1>Titulod de intro css</h1>
+    <p>Bienvenido a CSS</p>
+    <!-- con ruta con /index.html la / inicial espara ir al inicio de espacio de trabajo   -->
+    <p><a href="/index.html"> Volver al inicio </a></p>
+    <a href="https://www.coolors.co" target="_blank">
+      Para ver paletas de colores recomendados pr el profe</a
+    >
+    <!--LINKS CON IMAGENES-->
+    <br />
+    <br />
+    <br />
+    <br />
+    <a href="http://globalmentoring.com.mx" target="_blank">
+      <img
+        src="http://globalmentoring.com.mx/imagenes/gm.png"
+        alt="logo gm"
+        style="width: 150px; height: 74px"
+      />
+    </a>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <a href="https://www.coolors.co" target="_blank"> Boton con link </a>
+    <br />
+    <br />
+    <!--taablas en html-->
+    <table>
+      <!--titulo de la tabla con caption-->
+      <caption>
+        Titulo de tabla Listado de Personas
+      </caption>
+      <!-- cabecero de la tabla con th  -->
+      <tr>
+        <!-- colspan es para unir las columnas , n° de columnas unidas -->
+        <th colspan="2">Nombre</th>
+
+        <th>Email</th>
+      </tr>
+      <tr>
+        <!--Con td agregar dato en la tabla -->
+        <td>Juan</td>
+        <td>Perez</td>
+        <!--con rowspan se unen  filas, n°de filas -->
+        <td rowspan="2">jperez@gmail.com</td>
+      </tr>
+
+      <tr>
+        <!--Con td agregar dato en la tabla -->
+        <td>Tesla</td>
+        <td>Perez</td>
+      </tr>
+      <tr>
+        <!--Con td agregar dato en la tabla -->
+        <td>Tesla</td>
+        <td>Perez</td>
+        <td>@gmail:)</td>
+      </tr>
+
+      <tr>
+        <!--Con td agregar dato en la tabla -->
+        <td>Tesla</td>
+        <td>Perez</td>
+        <td>@gmail:)</td>
+      </tr>
+      <tr>
+        <!--Con td agregar dato en la tabla -->
+        <td>Tesla</td>
+        <td>Perez</td>
+        <td>@gmail:)</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--Listas No Ordenadas ul -->
+    <h2>Listas No Ordenadas</h2>
+    <!--lusta con ul -->
+    <ul>
+      <!--li elemento de lista-->
+      <li>Juan</li>
+      <li>Karla</li>
+      <li>
+        lista anidada
+        <ul>
+          <li>cosaq</li>
+          <li>cosaqr</li>
+        </ul>
+      </li>
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h3>Menu de navegacion</h3>
+    <ul>
+      <li><a href="/navegacion_estilo.html" >Navegacion mejor</a></li>
+      <li><a href="/navegacion_estilo.html" >Navegacion mejor dos</a></li>
+      <li><a href="/navegacion_estilo.html" >Navegacion mejor tres</a></li>
+    </ul>
+  </body>
+</html>

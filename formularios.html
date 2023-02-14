@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formularios HTML5</title>
+  </head>
+  <body>
+    <h1>Formularios en html5</h1>
+    <!--formularios en html5: con form-->
+    <!--Metodo GET :envia la información al servidor como URL(es visible )-ES POR DEFAUT-->
+    <!--Metodo POST :envia la información al servidor(MUY segura , como contraseñas , pagos etc) -->
+    <!--con fieldset : se cra un marco , con legend: da nombre al marco-->
+    <!--con action : es la url del servido-->
+    <!--con autocomplete : es para que no se autocomplete los valores del formulario-->
+    <form method="post" action="mi_servidor" autocomplete="off">
+      <fieldset>
+        <legend>Datos Persona:</legend>
+        <!-- formulario input es input :)  -->
+        <label for="nombre">Nombre:</label
+        ><!-- for para darle una etiquta a darle a la boxtext-->
+        <!-- name : para darle el nombre cuando lo recibe el SERVIDOR-->
+        <!--con value: se le da el valor inicial a la textbox-->
+        <!--con placeholder: se le da el valor inicial a la textbox en gris -->
+        <!--con required: cuando se requiera o se debe si o si escribir en la textbox-->
+        <br />
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="ingresar nombre"
+          required="true"
+        />
+        <!-- un id: espara darle nombre ó identificarlo-->
+
+        <br />
+        <label for="apellido">Apellido:</label><br />
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="ingresar apellido"
+          required="true"
+        /><br />
+
+        <label for="contraseña">Contraseña:</label><br />
+        <input
+          type="password"
+          id="contraseña"
+          name="contraseña"
+          required="true"
+        /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required="true" /><br />
+        <label for="edad">Edad:</label><br />
+        <!--con step='any': es para dar valores con puntoo decimales -->
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          required="true"
+          step="any"
+        /><br />
+        <label>Genero:</label><br />
+        <!--radio boton-->
+        <!-- para que solo se haga una eleecion se pone en name igual en todos los inputs-->
+        <!-- en radio boton y el checkbox el value: da el nombre al servidor -->
+        <input
+          type="radio"
+          id="femenino"
+          name="genero"
+          required="true"
+          value="femenino"
+        />
+        <label for="femenino">Femenino</label><br />
+        <input
+          type="radio"
+          id="masculino"
+          name="genero"
+          required="true"
+          value="masculino"
+        />
+        <label for="masculino">Masculino</label><br />
+
+        <!--CHECHKBOX son varias opcciones-->
+        <label>Musica favorita:</label><br />
+        <input type="checkbox" id="clasica" name="musica" value="clasica" />
+        <label for="clasica">Clasica</label><br />
+        <input type="checkbox" id="kpop" name="musica" value="kpop" />
+        <label for="kpop">Kpop</label><br />
+        <!--tipos select -->
+        <label for="autos">Marca Auto favorita:</label><br />
+        <select id="autos" name="autos">
+          <!--value se enviaal srvidor -->
+          <option value="volvo">Volvo</option>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <!--selected para dejar fijado el elemento-->
+          <option value="kia" selected="true">Kia</option></select
+        ><br />
+        <!--comentario TEXTAREA-->
+        <label for="comentario">Comentario:</label><br /><!--cols= columnas-->
+        <textarea
+          id="comentario"
+          name="comentario"
+          rows="2"
+          cols="30"
+        ></textarea>
+        <input
+          type="submit"
+          value="enviar"
+        /><br /><br /><!-- boton  value :para darle nombre-->
+        <!--con input type hidden : esta oculta y no se muestra al usuario 
+          y se puede enviar al servido
+        -->
+        <input type="hidden" id="sistema" name="sistema" value="SAP"/>
+        <!--solo valor de leer y fijado-->
+        <label for="fiajdo">valor fijado:</label><br />
+        <!--con didsabled: lo desabilita y no lo envia al servidor-->
+        <input
+          type="text"
+          id="fijado"
+          name="fijado"
+          readonly="true"
+          value="100"
+          disabled="true"
+        /><br />
+        <a href="/navegacion_estilo.html" >Atras</a>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+/*estilos de listas para menu navegaion*/
+ul {
+  list-style-type: none;
+  background-color: #1d3557;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: left;
+}
+/* li a (la combinacion siginica que solo a las listas con links )*/
+li a {
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+/*cabia de color de fondo cuando esta por encima*/
+li a:hover{
+    background-color: #5889ce;
+
+}
